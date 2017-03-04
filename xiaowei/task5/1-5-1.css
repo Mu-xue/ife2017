@@ -1,0 +1,132 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: rgb(222,222,222);
+}
+
+header {
+	background-color: black;
+	width: 100%;
+}
+
+header  img{
+	width: 55px;
+	height: 55px;
+	position: relative;
+	left: 20px;
+}
+
+header ul {
+	float: right;
+	position: relative;
+	right: 30px;
+}
+
+header li {
+	display: inline;
+	color: white;
+	line-height: 100%;
+	padding: 10px;
+}
+
+.nav {
+	text-decoration: none;
+	color: white;
+}
+
+.nav:visited {
+	color: gray;
+}
+
+.nav:hover {
+	color: red;
+}
+
+#sidebar {
+	float: right;
+	width:340px;
+	background-color: white;
+	position: relative;
+	right: 20px;
+	top:20px;
+	padding: 20px;
+}
+
+#sidebar h2 {
+	border-left-style: solid;
+	padding-left: 10px;
+	border-left-color: rgb(203,203,203);
+	border-left-width: .1em;
+}
+
+form > div {
+	margin:10px 0;
+}
+
+.bot{
+	vertical-align: bottom;
+}
+
+.input_message{
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;	
+	text-align: right;
+	margin-right: 20px;
+	margin-bottom: 0px;
+}
+
+.tips{
+	color: gray;
+	text-align: right;
+}
+
+.sub{
+	width: 100%;
+	line-height: 2em;
+	background-color: blue;
+	color: white;
+	border-radius: 10px;
+}
+
+form {
+	padding: 10px;
+}
+
+textarea{
+	height: 8em;
+}
+
+#main {
+	padding: 20px;
+	position: absolute;
+	right:400px;
+}
+
+#main div {
+	padding: 20px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+#third img {
+	width: 80px;
+	height: 80px;
+}
+
+table,
+th,
+td
+ {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	text-align: left;
+}
+
