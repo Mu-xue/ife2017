@@ -1,0 +1,639 @@
+body{
+	padding: 0;
+	margin: 0 auto;
+	width: 1280px;
+}
+
+div,h1,p{
+	padding: 0;
+	margin: 0;
+}
+
+#container{
+	background-color: white;
+}
+
+header{
+	background:  url("images/header_bg.png")  left no-repeat;
+	margin-left: 59px;
+	height: 57px;
+}
+
+header h2{
+	display: inline-block;
+	margin:15px 0 0 40px;
+}
+
+nav{
+	display: inline-block;
+	position:relative;
+	left:460px;
+	width: 540px;
+}
+
+ul{
+	margin: 0;
+	list-style: none;
+}
+
+li{
+	float: left;
+	padding-top: 20px;
+}
+
+li a{
+	text-decoration: none;
+	color: gray;
+	padding: 18px;
+}
+
+li a:hover{
+	border-bottom-style: solid;
+	border-bottom-color:#e74f4d;
+	color: #e74f4d;
+}
+
+#login{
+	display: inline-block;
+	position: relative;
+	left: 470px;
+}
+
+#login a{
+	text-decoration: none;
+	color:#e74f4d;
+}
+
+#login a img{
+	display: inline-block;
+	padding-right: 5px;
+}
+
+#cover{
+	padding-left: 116px;
+	height: 692px;
+	background:  url("images/picture1.png") no-repeat;
+}
+
+
+#cover h1{
+	margin-left: -5px;
+	padding-top: 230px;
+	color: white;
+	font-family: "Microsoft YaHei";
+	font-weight: normal;
+	font-size: 60px;
+}
+
+#cover p{
+	color: white;
+	font-family: "Microsoft YaHei";
+	font-weight:lighter;
+	font-size: 21px;
+	margin-bottom: 63px;
+	padding-top: 32px;
+}
+
+#cover a{
+	display: block;
+	font-family: "Microsoft YaHei";
+	font-weight: lighter;
+	font-size: 30px;
+	color: white;
+	width: 325px;
+	padding: 7px;
+	background-color:#e74f4d;
+	text-decoration: none;
+	text-align: center;
+}
+
+#fourlogos{
+	height: 154px;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 46px;
+	padding-bottom: 50px;
+}
+
+#fourlogos div{
+	float: left;
+	text-align: center;
+	width: 320px;
+}
+
+
+#fourlogos p{
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding-left: 80px;
+	padding-right: 80px;
+	border-right: 2px solid #aaaaaa;
+	font-family: "SimHei";
+	font-size: 14px;
+	color: #767777;
+}
+
+#gray{
+	background-color: #ececec;
+	height: 272px;
+	text-align: center;
+	padding-top: 89px;
+}
+
+#gray p{
+	font-family: "Microsoft YaHei";
+	font-size:54px;
+	color: #a1a1a1;
+}
+
+#search{
+	background: url("images/map.png") left no-repeat;
+	height: 340px;
+}
+
+.words{
+	text-align: center;
+}
+
+.line1{
+	display: inline-block;
+	font-family: "Microsoft YaHei";
+	font-size: 21px;
+	color: #fff;
+	padding-top: 52px;
+	padding-bottom: 10px;
+}
+
+.underline{
+	border-bottom: 3px solid #fff;
+}
+
+ .line2{
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	color: #f4f0ee;
+	margin-top: 20px;
+}
+
+.search-option{
+	width: 236px;
+	height: 36px;
+	margin: 52px 14px 0 14px;
+	display: inline-block;
+	background: #fff url("images/arrow.png") 208px 9px no-repeat;
+}
+
+.search-option1{
+	margin-left:112px;
+}
+
+.search-option p{
+	float: left;
+	margin-top: 9px;
+	text-indent:  12px;
+	font-family: "Microsoft YaHei";
+	font-size:13px;
+	color: #a8aaaa;
+}
+
+.search-option4{
+	background: #be4e48;
+}
+
+.search-option4 p{
+	color: #f7edec;
+	letter-spacing:26px;
+	text-indent: 91px;
+}
+
+.pictures{
+	height: 606px;
+	background-color: #f7f7f7;
+}
+
+.pictures p{
+	text-align: center;
+}
+
+.panel{
+	display: inline-block;
+	vertical-align: top;
+	padding:0 14px;
+}
+
+.panel-all{
+	padding-top: 100px;
+	padding-bottom: 114px;
+}
+
+.panel1{
+	margin-left: 134px;
+}
+
+
+.panel div{
+	width: 220px;
+	height: 336px;
+	border:1px solid #dadada;
+	border-bottom-color:#fff; 
+	background: #fff url("images/picture_wall.png") 0 0 no-repeat;
+}
+
+.panel1 div{
+	background-position: 8px 12px;
+}
+
+.panel2 div{
+	background-position: -246px -41px;
+}
+
+.panel3 div{
+	background-position: -504px 12px;
+}
+
+.panel4 div{
+	background-position: -760px 12px;
+}
+
+.bigtitle{
+	font-family: "Microsoft YaHei";
+	font-size: 20px;
+	color: #323333;
+}
+
+.title1{
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	color: #323333;
+	line-height: 40px;
+}
+
+.title2{
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	color: #909191;
+}
+
+.panel2 .title2 {
+	line-height: 28px;
+}
+
+
+.TIME .left{
+	width: 850px;
+	height: 566px;
+	background: #fff url("images/TIME.png") 0 0 no-repeat;
+}
+
+.TIME .left p{
+	color: #fff;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+}
+
+.TIME .left .title1{
+	padding-top: 131px;
+	font-size: 50px;
+}
+
+.TIME .left .title2{
+	font-size: 158px;
+}
+
+.TIME .left .title3{
+	font-size: 22px;
+	line-height: 48px;
+}
+
+.TIME .triangle{
+	float: right;
+	margin-top: 268px;
+	border-right: 27px solid #fff;
+	border-bottom:16px solid transparent;
+	border-left:27px solid transparent;
+	border-top: 16px solid transparent;
+}
+
+.TIME .right{
+	float: right;
+	width: 290px;
+	padding-top:164px;
+	padding-right: 72px;
+	text-align: center;
+}
+
+.TIME .right > p{
+	width: 290px;
+	padding-top: 20px;
+	text-align: left;
+	color: #aaaaaa;
+	font-family: "SimSun";
+	font-size:12px;
+	line-height: 30px;
+}
+
+.TIME .right  img{
+	text-align: right;
+}
+
+.TIME .right > a{
+	display: inline-block;
+	width: 106px;
+	height: 30px;
+	margin-top:42px; 
+	border:1px solid #e25c60;
+	text-decoration: none;
+}
+
+.TIME .right a p{
+	position: relative;
+	top:9px;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	font-weight: bold;
+	color: #e25c60;
+}
+
+.TIME .dot{
+	display: inline-block;
+	width: 11.2px;
+	height: 12px;
+	margin: 25px 8px;
+	background-image: url("images/dot2.png");
+	text-decoration: none;
+}
+
+.TIME .dot:hover{
+	background-image: url("images/dot1.png");
+}
+
+.more{
+	background-color: #fff;
+}
+
+.more > div{
+	display: inline-block;
+}
+
+.more .letter{
+	width: 425px;	
+	padding-top: 172px;
+}
+
+.more .letter div{
+	width: 170px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.more .letter:first-child{
+	height: 350px;
+	background-color: #e7504d;
+}
+
+.more .letter:first-child p{
+	font-family: "SimHei";
+	font-size: 21px;
+	color: #fff;
+}
+
+.more .letter:nth-child(2) p{
+	font-family: "SimHei";
+	font-size: 21px;
+	color: #323333;
+}
+
+.more .letter:first-child a{
+	display: block;
+	padding: 12px 42px;
+	border:1px solid #fff;
+	text-decoration: none;
+}
+
+.more .letter:nth-child(2) a{
+	display: block;
+	padding: 12px 42px;
+	border:1px solid #e7504d;
+	text-decoration: none;
+}
+
+.more .letter:nth-child(2) a p{
+	color: #e7504d;
+}
+
+.more .letter div >p{
+	line-height: 30px;
+}
+
+.more .letter:first-child .line{
+	width: 30px;
+	height: 25px;
+	border-top: 2px solid #fff;
+	margin-top: 20px;
+}
+
+.more .letter:nth-child(2) .line{
+	width: 30px;
+	height: 25px;
+	border-top: 2px solid #ababaa;
+	margin-top: 20px;
+}
+
+.more .img{
+	width: 430px;
+	height: 521px;
+	background-image: url("images/train.png");
+	vertical-align: top;
+}
+
+.more .triangle{
+	float: left;
+	margin-top: 246px;
+	border-left: 27px solid #fff;
+	border-bottom:16px solid transparent;
+	border-right:27px solid transparent;
+	border-top: 16px solid transparent;
+}
+
+.form{
+	height: 750px;
+}
+
+.form .top{
+	padding-top: 118px;
+	padding-bottom: 108px;
+	text-align: center;
+}
+
+.form h2{
+	font-family: "SimHei";
+	font-size: 21px;
+	line-height: 30px;
+	color: #323333;
+}
+
+.form .top p{
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	line-height: 18px;
+	color: #aaaaaa;
+}
+
+.form .top .line{
+	width: 30px;
+	height: 15px;
+	border-top: 3px solid #e7504d;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form .left{
+	width: 290px;
+	padding-left: 138px;
+}
+
+.form .left h3{
+	font-family: "SimHei";
+	font-size: 14px;
+	color: #666160;
+}
+
+.form .left p{
+	font-family: "SimSun";
+	font-size: 12px;
+	color: #a5a3a2;
+}
+
+.form .left >p{
+	padding-top: 28px;
+}
+
+.form .left div{
+	padding-top: 10px;
+	background:  url("images/more-arrow.png") 246px 14px no-repeat;
+}
+
+.form .left .more-arrow :first-child{
+	padding-bottom: 39px;
+}
+
+.form .left div p {
+	text-align: right;
+}
+
+.form .right{
+	float: right;
+	width: 660px;
+	padding-right: 100px;
+}
+
+.form input{
+	display: inline-block;
+	width: 311px;
+	height: 41px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	border:0;
+	background-color: #ededef;
+	text-indent: 16px;
+	font-family: "SimSun";
+	color: #231815;
+}
+
+.form textarea{
+	width: 635px;
+	height: 105px;
+	padding-top: 15px;
+	background-color: #ededef;
+	border:0;
+	text-indent: 16px;
+}
+
+.form button{
+	width: 639px;
+	height: 41px;
+	border:0;
+	background-color: #ededef;
+	text-align: center;
+	margin-top: 13px;
+	font-family: "SimHei";
+	font-size: 14px;
+}
+
+.form ::-moz-placeholder 
+{ color: #787474;font-family: "SimSun";font-size: 12px;font-weight: bold; }
+.form ::-webkit-input-placeholder
+ { color: #787474;font-family: "SimSun";font-size: 12px; font-weight: bold; }
+.form :-ms-input-placeholder
+ {color: #787474;font-family: "SimSun";font-size: 12px; font-weight: bold;}
+
+.contact{
+	height: 266px;
+	padding-top: 94px;
+	background-color: #32363e;
+	text-align: center;
+}
+
+.contact h2{
+	color: #f5f5f5;
+	font-family: "SimHei";
+	font-size: 21px;
+}
+
+.contact p{
+	padding-top: 12px;
+	padding-bottom: 30px;
+	color: #f5f5f5;
+	font-family: "SimSun";
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.contact input{
+	height: 40px;
+	padding: 0;
+	border:0;
+}
+
+.contact .email{
+	width: 432px;
+	text-indent: 6px;
+}
+
+.contact .submit{
+	width: 80px;
+	background-color: #6f7278;
+	font-size: 15px;
+	font-family: "Microsoft YaHei";
+	color: #d6d6d8;
+}
+
+.contact div{
+	padding-top: 37px;
+	letter-spacing: 14px;
+}
+
+footer{
+	height: 58px;
+	background-color: #2f3038;
+}
+
+footer p{
+	padding-left: 100px;
+	padding-top: 30px;
+	font-family: "SimSun";
+	font-size: 12px;
+	color: #f5f5f5;
+}
+
+footer a{
+	float: right;
+	padding-right: 40px;
+	padding-top: 30px;
+	text-decoration: none;
+	font-family: "SimSun";
+	font-size: 12px;
+	color: #f5f5f5;
+}
