@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>IFE2017-task4</title>
+	<title>IFE2017-task5</title>
 	<style type="text/css">
-		ul{list-style: none;height: 100px;}
+		ul{list-style: none;height: 200px;}
 		li{display:inline-block;width: 20px;text-align: center;background-color: red;vertical-align: bottom;font-size: 10px;}
 	</style>
 </head>
@@ -29,7 +29,7 @@
 			var li=document.createElement("li");
 			var text=document.createTextNode(num);
 			li.appendChild(text);
-			li.style.height=num+"px";
+			li.style.height=num*2+"px";
 			li.onclick=function (){
 				list.removeChild(li);
 				alert("删除"+num);
@@ -70,24 +70,26 @@
 
 		function sort(){
 			var array=list.childNodes;
-			var time=new Date();
 			var body=document.getElementsByTagName("body");
-			for(var i=0;i<array.length-1;i++){
-				for(var j=0;j<array.length-i-1;j++){
-					if(array[j].firstChild.nodeValue>array[j+1].firstChild.nodeValue){
-						var temp=list.removeChild(array[j+1]);
-						list.insertBefore(temp,array[j]);
-						var p=document.createElement("p");
-						p.innerHTML="交换了"+array[j].firstChild.nodeValue+"和"+array[j+1].firstChild.nodeValue;
-						body[0].appendChild(p);
-						var startTime=time.getTime();
-						while(1){
-							var currentTime=time.getTime();
-							if(currentTime-startTime>500)break;
+			var i=0,j=0;
+			var loop=setInterval(sort2,500);       				//每隔500ms进行一次冒泡操作
+			function  sort2(){
+				if(i<array.length-1){
+					if(j<array.length-i-1){
+						if(array[j].firstChild.nodeValue>array[j+1].firstChild.nodeValue){	//比较并交换
+							var temp=list.removeChild(array[j+1]);
+							list.insertBefore(temp,array[j]);
+							var p=document.createElement("p");
+							p.innerHTML="交换了"+array[j].firstChild.nodeValue+"和"+array[j+1].firstChild.nodeValue;
+							body[0].appendChild(p);
 						}
 					}
+					j++;
 				}
+				if(j>=array.length-i-1){i++;j=0;}
+				if(i>=array.length-1)clearInterval(loop);
 			}
+			
 		}
 
 
