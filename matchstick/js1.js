@@ -29,9 +29,11 @@ var panel=document.getElementById("panel");
 
 
 		function sort(){
+			createbt.onclick=null;
+			sortbt.onclick=null;
 			var array=document.getElementsByTagName("img");
 			var i=0,j=0;
-			var loop=setInterval(sort2,135);       				//每隔500ms进行一次冒泡操作
+			var loop=setInterval(sort2,135);       				//每隔135ms进行一次冒泡操作
 			function  sort2(){
 				if(i<array.length-1){
 					if(j<array.length-i-1){
@@ -59,12 +61,20 @@ var panel=document.getElementById("panel");
 					j++;
 				}
 				if(j>=array.length-i-1){i++;j=0;}
-				if(i>=array.length-1){clearInterval(loop);setTimeout(function(){array[0].src="personb.png";},400);}
+				if(i>=array.length-1){
+					clearInterval(loop);
+					setTimeout(function(){
+						array[0].src="personb.png";
+						createbt.onclick=create;
+						sortbt.onclick=sort;
+					},400);
+
+				}
 			}	
 		}
 
-		function init(){
-			createbt.onclick=function(){
+		function create(){
+			panel.innerHTML="";
 				var num=document.body.clientWidth/128;
 				for(var k=0;k<num;k++){
 					var img=document.createElement("img");
@@ -73,8 +83,11 @@ var panel=document.getElementById("panel");
 					img.style.height=100+Math.random()*250+"px";
 					panel.appendChild(img);
 				}
-			}
-			sortbt.onclick=sort;
 		}
-		init();
+
+		(function init(){
+			createbt.onclick=create;
+			sortbt.onclick=sort;
+		})();
+		
 
