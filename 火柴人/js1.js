@@ -65,7 +65,7 @@ var panel=document.getElementById("panel");
 
 		function init(){
 			createbt.onclick=function(){
-				var num=document.body.clientWidth/130;
+				var num=document.body.clientWidth/128;
 				for(var k=0;k<num;k++){
 					var img=document.createElement("img");
 					img.class="person";
